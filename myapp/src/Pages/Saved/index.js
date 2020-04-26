@@ -4,16 +4,16 @@ function Saved() {
   return (
     <main role="main">
 
-      <section class="jumbotron text-left">
-        <div class="container">
+      <section className="jumbotron text-left">
+        <div className="container">
           <h3>Saved Books</h3>
         </div>
       </section>
 
-      <div class="album py-5 bg-light">
-        <div class="container text-left">
-          <div class="row">
-            <div class="col-md-12 my-2">
+      <div className="album py-5 bg-light">
+        <div className="container text-left">
+          <div className="row">
+            <div className="col-md-12 my-2">
               <Card>
                   <Card.Header>
                     <Row>
@@ -32,10 +32,10 @@ function Saved() {
                   </Row>
                  </Card.Header>
                   <Card.Body>
-                      <div class="media">
+                      <div className="media">
                       <img style={{ width: 300 }} src="https://www.freecodecamp.org/news/content/images/2020/02/Ekran-Resmi-2019-11-18-18.08.13.png" class="mr-3" alt="..." />
-                      <div class="media-body">
-                        <h5 class="mt-0">Media heading</h5>
+                      <div className="media-body">
+                        <h5 className="mt-0">Media heading</h5>
                         Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                       </div>
                     </div>
@@ -46,7 +46,7 @@ function Saved() {
 
 
 
-            <div class="col-md-12 my-2">
+            <div className="col-md-12 my-2">
             <Card>
                 <Card.Header>
                   <Row>
@@ -65,10 +65,10 @@ function Saved() {
                 </Row>
                </Card.Header>
                 <Card.Body>
-                    <div class="media">
+                    <div className="media">
                     <img style={{ width: 300 }} src="https://www.freecodecamp.org/news/content/images/2020/02/Ekran-Resmi-2019-11-18-18.08.13.png" class="mr-3" alt="..." />
-                    <div class="media-body">
-                      <h5 class="mt-0">Media heading</h5>
+                    <div ClassName="media-body">
+                      <h5 ClassName="mt-0">Media heading</h5>
                       Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                     </div>
                   </div>
