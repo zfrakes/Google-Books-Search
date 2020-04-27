@@ -1,11 +1,23 @@
 import React from "react";
 import { Button, Card, Row, Col } from "react-bootstrap";
-
+import API from "../../utils/API";
 function BookResult(props) {
   const title = props.book.volumeInfo.title;
   const authors = props.book.volumeInfo.authors;
   const description = props.book.volumeInfo.description;
   const imageLinks = props.book.volumeInfo.imageLinks;
+  
+  function handleSaveBook(){
+      API.saveBook({
+        title: title,
+        authors: authors,
+        description: description,
+        image:imageLinks[0]
+      })
+        .then(res =>console.log(res))
+        .catch(err => console.log(err));
+
+  }; 
   return (
 
     <div class="col-md-12 my-2">
@@ -21,7 +33,7 @@ function BookResult(props) {
                 <Button variant="primary" className="mx-2">
                   View
                 </Button>
-                <Button variant="primary">Save</Button>
+                <Button onClick={() => handleSaveBook()} variant="primary">Save</Button>
               </div>
             </Col>
           </Row>

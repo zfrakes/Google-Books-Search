@@ -1,6 +1,12 @@
 import React from 'react';
 import { Form, Button, Card, Row, Col } from 'react-bootstrap';
+import API from "../../utils/API";
 function Saved() {
+  // function deleteBook(id) {
+  //   API.deleteBook(id)
+  //     .then(res => loadBooks())
+  //     .catch(err => console.log(err));
+  // }
   return (
     <main role="main">
 
