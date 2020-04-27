@@ -4,8 +4,8 @@ import {
 } from "react-router-dom";
 import logo from './logo.svg';
 import { Nav, Navbar, Form, Button, FormControl } from 'react-bootstrap';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import Search from './Pages/Search';
 import Saved from './Pages/Saved';
 import './App.css';
