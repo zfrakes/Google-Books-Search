@@ -15,15 +15,7 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to the Mongo DB
-mongoose
-.connect(process.env.MONGODB_URI, {
-useUnifiedTopology: true,
-useNewUrlParser: true,
-})
-.then(() => console.log('DB Connected!'))
-.catch(err => {
-console.log(`DB Connection Error: ${err.message}`);
-});
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/GoogleBookSearch");
 
 // Start the API server
 app.listen(PORT, function() {
